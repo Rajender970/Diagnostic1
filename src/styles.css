@@ -1,0 +1,148 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.header {
+  background-color: blue;
+}
+.main {
+  background-color: white;
+  min-height: 250px;
+}
+.footer {
+  background-color: purple;
+  min-height: 50px;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 5px;
+  column-gap: 70px;
+}
+.consult-doctor,
+.order-medicine,
+.diagno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin: 12px 0px;
+}
+.consult-doctor #doc-img,
+.order-medicine #order-img,
+.diagno #diagno-img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.social-media-icons {
+  width: 10vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  column-gap: 10px;
+  color: white;
+}
+.images h3 {
+  font-size: 20px;
+  color: white;
+}
+.login {
+  background-color: white;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-content: center;
+  align-content: center;
+}
+.login h2 {
+  color: darkblue;
+
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login .login-signup {
+  margin-left: 100px;
+  margin: 30px 0px;
+  align-self: center;
+  align-items: center;
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.login .login-signup button {
+  border: 1px solid blue;
+  color: blue;
+}
+.main .main-search {
+  display: flex;
+  height: 50px;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: RGB(193 197 200);
+}
+.main .search {
+  margin: 45px 0px;
+  height: 28px;
+  background-color: RGB(193 197 200);
+}
+.main .main-search .search input {
+  width: 500px;
+}
+.main .main-body {
+  border: 1px solid red;
+  margin: 0px 155px;
+}
+.corusel {
+  margin-top: 10px;
+}
+.test-bar {
+  display: flex;
+  width: 100%;
+}
+.test-bar .title {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.test-modal {
+  display: flex;
+  max-width: 150vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 10px;
+  padding: 10px 0px;
+  column-gap: 20px;
+}
+.test-modal .test {
+  max-width: 230px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid lightskyblue;
+  text-align: center;
+}
+.test .test-modal-footer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.test-modal-footer .price {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.test-modal-footer .price {
+  height: 1px;
+}
