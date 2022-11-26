@@ -3,15 +3,53 @@
   text-align: center;
 }
 .header {
-  background-color: blue;
+  background-color: darkblue;
 }
 .main {
   background-color: white;
   min-height: 250px;
 }
 .footer {
-  background-color: purple;
+  background-color: darkblue;
   min-height: 50px;
+}
+.footer .footer-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.footer-body .body1 {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 125px;
+  color: white;
+  text-align: start;
+}
+hr {
+  width: 1046px;
+  border-top: 0px;
+  border: 1px solid lightblue;
+}
+.body-column {
+  margin-top: 15px;
+}
+.body-column p {
+  font-size: small;
+}
+.footer .store-app {
+  display: flex;
+  width: 116px;
+  padding: 10px;
+  column-gap: 5px;
+  border-radius: 6px;
+  height: 49px;
+  margin: 5px 0px;
+  background-color: white;
+  color: gray;
+}
+.store-app p {
+  padding: 0px;
 }
 .images {
   display: flex;
@@ -19,7 +57,7 @@
   align-content: center;
   align-items: center;
   margin-left: 5px;
-  column-gap: 70px;
+  column-gap: 75px;
 }
 .consult-doctor,
 .order-medicine,
@@ -55,10 +93,16 @@
 .login {
   background-color: white;
   display: flex;
-
+  column-gap: 576px;
   justify-content: space-evenly;
   align-content: center;
   align-content: center;
+}
+.login .logo {
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
 }
 .login h2 {
   color: darkblue;
@@ -71,9 +115,9 @@
   margin: 30px 0px;
   align-self: center;
   align-items: center;
-  width: 30vw;
+  width: 15vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .login .login-signup button {
   border: 1px solid blue;
@@ -100,7 +144,62 @@
   margin: 0px 155px;
 }
 .corusel {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  left: 200px;
+}
+.caption-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  align-content: center;
+  border: 1px solid green;
+  width: 100%;
+  height: 150px;
+}
+.caption-circle .circle1 {
+  width: 70%;
+  height: 30%;
+  border-radius: 25px;
+  background-color: orange;
+}
+.caption-circle .circle2 {
+  width: 90%;
+  height: 70%;
+  box-shadow: 0px 8px 0px 1px orange;
+  border-radius: 33px;
+  background-color: darkblue;
+}
+.carousel-item img {
+  width: 100%;
+  height: 50vh;
+  margin: 20px 0px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: gray;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 100px 0px;
+}
+.carousel-control-prev {
+  margin-left: -25px;
+}
+.carousel-control-next {
+  margin-right: -25px;
 }
 .test-bar {
   display: flex;
@@ -157,25 +256,38 @@
   padding: 5px;
 }
 .test .test-modal-footer {
-  height: 50px;
+  height: 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .test-modal-footer .price {
   display: flex;
-
   flex-direction: column;
-  justify-content: flex-start;
+  text-align: start;
 }
-.test-modal-footer .price {
-  height: 1px;
+.test-modal-footer .price p {
+  align-self: flex-start;
+  justify-content: flex-start;
+  height: 17px;
+  font-size: medium;
+}
+.price .price-values {
+  display: flex;
+  column-gap: 10px;
+  margin-top: -13px;
+}
+.price .price-values p {
+  font-size: 12px;
 }
 .test-bar .title button {
   border: none;
   background-color: inherit;
 }
-.add-to-cart .btn {
-  background-color: white;
-  color: blue;
+.add-to-cart .btn,
+.btn-primary {
+  border: 2px solid RGB(124 212 247);
+  background-color: white !important;
+  color: RGB(124 212 247);
 }
