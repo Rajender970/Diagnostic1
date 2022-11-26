@@ -4,7 +4,7 @@ const BookedTests = () => {
     <div>
       <div className="test-bar">
         <div className="title">
-          <h1>Top Booked Tests</h1>
+          <h4>Top Booked Tests</h4>
           <button>View All</button>
         </div>
       </div>
@@ -29,14 +29,14 @@ const BookedTests = () => {
 
             <div className="test-modal-footer">
               <div className="price">
-                <p style={{ marginLeft: "-30px" }}>
-                  <b>{test.offer_price}.00</b>
+                <p>
+                  <b>₹{test.offer_price}.00</b>
                 </p>
-                <div style={{ display: "flex", columnGap: "5px" }}>
+                <div className="price-values">
                   <p>
-                    <s>{test.original_price}</s>
+                    <s style={{ color: "gray" }}>₹{test.original_price}</s>
                   </p>
-                  <p style={{ color: "lightgreen" }}>
+                  <p style={{ color: "green" }}>
                     {((test.original_price - test.offer_price) /
                       test.original_price) *
                       100}
@@ -45,7 +45,7 @@ const BookedTests = () => {
                 </div>
               </div>
               <div className="add-to-cart">
-                <button>Add to cart</button>
+                <button className="btn btn-primary">Add to cart</button>
               </div>
             </div>
           </div>

@@ -4,28 +4,39 @@ const HealthPackage = () => {
     <div style={{ margin: "0px 160px" }}>
       <div className="test-bar">
         <div className="title">
-          <h1>Health Packages</h1>
+          <h4>Health Packages</h4>
           <button>View All</button>
         </div>
       </div>
       <div className="test-modal">
         {HealthPackages.map((test) => (
           <div className="test">
-            <div className="test-title">
-              <h3>{test.title}</h3>
+            <div className="test-body">
+              <div className="test-logo">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSskx9XTpVvVbu97r_7DONq--zpFh42IzJ2Jg&usqp=CAU"
+                  alt="Test Logo"
+                />
+              </div>
+              <div className="test-title">
+                <h6>
+                  <strong>{test.title}</strong>
+                </h6>
+              </div>
+              <p className="description">{test.Description}</p>
             </div>
-            <p>{test.Description}</p>
             <hr />
+
             <div className="test-modal-footer">
               <div className="price">
-                <p style={{ marginLeft: "-30px" }}>
-                  <b>{test.offer_price}.00</b>
+                <p>
+                  <b>₹{test.offer_price}.00</b>
                 </p>
-                <div style={{ display: "flex", columnGap: "5px" }}>
+                <div className="price-values">
                   <p>
-                    <s>{test.original_price}</s>
+                    <s style={{ color: "gray" }}>₹{test.original_price}</s>
                   </p>
-                  <p style={{ color: "lightgreen" }}>
+                  <p style={{ color: "green" }}>
                     {((test.original_price - test.offer_price) /
                       test.original_price) *
                       100}
@@ -34,7 +45,7 @@ const HealthPackage = () => {
                 </div>
               </div>
               <div className="add-to-cart">
-                <button>Add to cart</button>
+                <button className="btn btn-primary">Add to cart</button>
               </div>
             </div>
           </div>
