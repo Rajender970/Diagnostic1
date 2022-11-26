@@ -1,7 +1,7 @@
 import { HealthPackages } from "../variables/Variables";
 const HealthPackage = () => {
   return (
-    <div>
+    <div style={{ margin: "0px 160px" }}>
       <div className="test-bar">
         <div className="title">
           <h1>Health Packages</h1>

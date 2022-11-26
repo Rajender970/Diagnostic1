@@ -97,7 +97,6 @@
   width: 500px;
 }
 .main .main-body {
-  border: 1px solid red;
   margin: 0px 155px;
 }
 .corusel {
@@ -126,10 +125,36 @@
 }
 .test-modal .test {
   max-width: 230px;
+  background-color: white;
   padding: 10px;
   border-radius: 10px;
   border: 0.5px solid lightskyblue;
   text-align: center;
+}
+.test .test-body {
+  height: 120px;
+}
+.test-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+.test-body .test-logo img {
+  width: 50px;
+  align-self: flex-start;
+}
+.test-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.test-title h6 {
+  text-align: start;
+}
+.test .test-body .description {
+  font-size: small;
+  text-align: start;
+  color: lightgray;
+  padding: 5px;
 }
 .test .test-modal-footer {
   height: 50px;
@@ -145,4 +170,12 @@
 }
 .test-modal-footer .price {
   height: 1px;
+}
+.test-bar .title button {
+  border: none;
+  background-color: inherit;
+}
+.add-to-cart .btn {
+  background-color: white;
+  color: blue;
 }

@@ -1,15 +1,15 @@
-import { Tests } from "../variables/Variables";
-const TestModal = () => {
+import { TopTests } from "../variables/Variables";
+const BookedTests = () => {
   return (
     <div>
       <div className="test-bar">
         <div className="title">
-          <h4>Popular Tests</h4>
+          <h1>Top Booked Tests</h1>
           <button>View All</button>
         </div>
       </div>
       <div className="test-modal">
-        {Tests.map((test) => (
+        {TopTests.map((test) => (
           <div className="test">
             <div className="test-body">
               <div className="test-logo">
@@ -54,4 +54,4 @@ const TestModal = () => {
     </div>
   );
 };
-export default TestModal;
+export default BookedTests;
