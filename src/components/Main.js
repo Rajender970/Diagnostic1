@@ -2,6 +2,7 @@ import Search from "../pages/Search";
 import Corousel from "../LayOuts/Corousel";
 import TestModal from "../LayOuts/TestModal";
 import HealthPackage from "../LayOuts/HealthPackage";
+import BookedTests from "../LayOuts/TopBookedTests";
 function Main() {
   return (
     <div className="main">
@@ -23,8 +24,14 @@ function Main() {
         <div className="tests">
           <TestModal />
         </div>
-        <div className="health-Packages">
+        <div
+          className="health-Packages"
+          style={{ margin: "0px -155px", backgroundColor: "lightgray" }}
+        >
           <HealthPackage />
+        </div>
+        <div className="top-tests">
+          <BookedTests />
         </div>
       </div>
     </div>
